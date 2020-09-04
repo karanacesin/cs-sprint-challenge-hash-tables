@@ -6,7 +6,12 @@ def finder(files, queries):
     """
     YOUR CODE HERE
     """
-    # Your code here
+    cache = dict.fromkeys(queries)
+    result = []
+
+    for x in files:
+       if x.split('/') [-1] in cache:
+           result.append(x) 
 
     return result
 
